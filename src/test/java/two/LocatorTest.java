@@ -19,16 +19,16 @@ public class LocatorTest {
         driver.findElement(By.id("userName")).sendKeys("Fahmida Akther");
         driver.findElement(By.id("userEmail")).sendKeys("fahmida.himu0904@gmail.com");
         driver.findElement(By.tagName("textarea")).sendKeys("Please enter your current address in this description box.");
-        //driver.findElement(By.className("btn btn-primary")).click();                      //not working cz found multiple class
+        //driver.findElement(By.className("btn btn-primary")).click();                              //not working cz found multiple class
 
         /* WebElement element= driver.findElement(By.id("userName"));
         element.clear();
         element.sendKeys("Fahmida Akther"); */
 
         Thread.sleep(3000);
-        driver.navigate().to("https://parabank.parasoft.com/parabank/index.htm");             //jump to other/new page
-        driver.findElement(By.name("username")).sendKeys("Fahmida");                   //name
-        driver.findElement(By.name("password")).sendKeys("1234");                      //name
+        driver.navigate().to("https://parabank.parasoft.com/parabank/index.htm");               //jump to other/new page
+        driver.findElement(By.name("username")).sendKeys("Fahmida");                            //name
+        driver.findElement(By.name("password")).sendKeys("1234");                               //name
         driver.findElement(By.className("Solutions")).click();                                    //className
         driver.findElement(By.linkText("Services")).click();                                      //linkText
         driver.findElement(By.partialLinkText("Admin ")).click();                                 //partialLinkText
