@@ -41,6 +41,8 @@ public class InteractingWebElements {
         System.out.println(driver.findElement(By.cssSelector(".copyright")).getText().trim());      //Print the Text Content by using .getText()
         System.out.println(driver.findElement(By.cssSelector("img[class$='img-responsive center']")).getAttribute("src"));      //Print the URL by using .getAttribute()
 
+        driver.get("https://the-internet.herokuapp.com/upload&quot");
+
         Thread.sleep(3000);
         driver.quit();
     }
