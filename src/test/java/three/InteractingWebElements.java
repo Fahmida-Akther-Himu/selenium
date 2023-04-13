@@ -18,15 +18,15 @@ public class InteractingWebElements {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
         //Interacting with 5 web elements
-        WebElement username = driver.findElement(By.cssSelector("input[id$='username_txt']"));        //by using cssSelector * contains - name
+        WebElement username = driver.findElement(By.cssSelector("input[id$='username_txt']"));        //Dynamic selectors - * contains
         username.clear();       //clear - only applies to text fields and content editable elements
         username.sendKeys("ahsan.habib");       //send keys - only applies to text fields and content editable elements
 
-        WebElement password = driver.findElement(By.cssSelector("input[type^='password']"));        //by using cssSelector ^ start with - password
+        WebElement password = driver.findElement(By.cssSelector("input[type^='password']"));        //Dynamic selectors - ^ start with
         password.clear();
         password.sendKeys("abc123$");
 
-        //driver.findElement(By.cssSelector("button[type$='button']")).click();       //by using cssSelector $ end with - button and click - applies to any element
+        //driver.findElement(By.cssSelector("button[type$='button']")).click();       //Dynamic selectors - $ end and click - applies to any element
         driver.findElement(By.cssSelector("form[id='loginForm']")).submit();          //submit use only applies to form elements
         //driver.findElement(By.id("loginForm")).submit();
 
