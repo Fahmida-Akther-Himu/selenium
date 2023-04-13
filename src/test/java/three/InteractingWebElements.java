@@ -19,7 +19,7 @@ public class InteractingWebElements {
 
         //Interacting with 5 web elements
         WebElement username = driver.findElement(By.cssSelector("input[id$='username_txt']"));        //Dynamic selectors - * contains
-        username.clear();                   //clear - only applies to text fields and content editable elements
+        username.clear();                       //clear - only applies to text fields and content editable elements
         username.sendKeys("ahsan.habib");       //send keys - only applies to text fields and content editable elements
 
         WebElement password = driver.findElement(By.cssSelector("input[type^='password']"));        //Dynamic selectors - ^ start with
