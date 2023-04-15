@@ -12,7 +12,7 @@ import java.time.Duration;
 
 public class BaseErpTest {
     protected static WebDriver driver;
-
+//a
     @BeforeMethod
     public void setUpBrowser() {
         WebDriverManager.firefoxdriver().setup();
