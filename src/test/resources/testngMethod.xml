@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" name="E:/git/selenium/src/test/java/dev/testng/assignmentOne">
+        <classes>
+            <class name="dev.testng.assignmentOne.classTest.ErpTest">
+                <methods>
+                    <include name="verifyLoginPageShouldSucceed"/>
+                    <include name="verifyLoginShouldSucceed"/>
+                    <include name="verifyTitleShouldSucceed"/>
+                </methods>
+            </class>
+            <class name="dev.testng.assignmentOne.methodTest.ErpTest">
+                <methods>
+                    <include name="verifyLoginPageShouldSucceed"/>
+                    <include name="verifyLoginShouldSucceed"/>
+                    <include name="verifyTitleShouldSucceed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
