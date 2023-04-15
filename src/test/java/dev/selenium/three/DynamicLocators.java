@@ -1,4 +1,4 @@
-package three;
+package dev.selenium.three;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -32,7 +32,7 @@ public class DynamicLocators {
 
         //Print All Links for a Single page
         List<WebElement> links = driver.findElements(By.tagName("a"));
-        System.out.printf(String.valueOf(links.size()));
+        System.out.print(links.size());
         if (links.size() != 0) {
             for (WebElement webElement : links) {
                 String link = webElement.getAttribute("href");
